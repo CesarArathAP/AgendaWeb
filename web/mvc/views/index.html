@@ -1,7 +1,51 @@
 $def with ()
 
-<div class="text-center">
-    <h2 class="display-4">Bienvenido a la Agenda Web</h2>
-    <p class="lead">Esta es tu aplicación de gestión de agenda.</p>
-    <a href="#" class="btn btn-primary btn-lg mt-4">Comenzar</a>
+<div class="container position-relative">
+    <div class="row justify-content-center mb-5">
+        <!-- Div Vacio -->
+    </div>
+
+    <div class="row justify-content-center">
+        <!-- Tarjeta de Login -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card shadow mb-4 bg-light" style="opacity: 0.9;">
+                <div class="card-body">
+                    <h2 class="text-center text-primary">Bienvenido a la Agenda Web</h2>
+                    <p class="lead text-center">Inicia sesión para continuar</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="username" placeholder="Ingresa tu usuario" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" required>
+                        </div>
+                        
+                        <!-- Checkbox de Recordar siempre mi contraseña -->
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Recordar siempre mi contraseña</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+                    </form>
+                    <p class="mt-3 text-center">
+                        <a href="#" class="text-muted">¿Olvidaste tu contraseña?</a>
+                    </p>
+                    
+                    <!-- Divider -->
+                    <hr class="my-4">
+        
+                    <!-- Botones de Login con Google y Facebook -->
+                    <button class="btn btn-danger w-100 mb-2" style="background-color: #db4437;">
+                        <i class="fab fa-google me-2"></i> Iniciar sesión con Google
+                    </button>
+                    <button class="btn btn-primary w-100" style="background-color: #3b5998;">
+                        <i class="fab fa-facebook-f me-2"></i> Iniciar sesión con Facebook
+                    </button>
+                </div>
+            </div>
+        </div>        
+    </div>
 </div>

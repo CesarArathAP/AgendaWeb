@@ -1,0 +1,50 @@
+$def with(body)
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Web</title>
+    <link rel="icon" href="../../static/images/calendario.png" type="image/png">
+    <link rel="stylesheet" href="../../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../../static/styles/index.css">
+</head>
+
+<body>
+    <div class="position-relative">
+        <main class="position-relative text-white">
+
+            <!-- Carrusel de Imágenes como Fondo -->
+            <div id="imageCarousel" class="carousel slide position-fixed w-100 h-100" data-bs-ride="carousel" style="z-index: -1;">
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active h-100">
+                        <img src="../../static/images/imagen1.jpg" class="d-block w-100 h-100" alt="Imagen 1" style="object-fit: cover;">
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="../../static/images/imagen2.png" class="d-block w-100 h-100" alt="Imagen 2" style="object-fit: cover;">
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="../../static/images/imagen3.jpg" class="d-block w-100 h-100" alt="Imagen 3" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Capa para agregar contraste usando utilidades de Bootstrap -->
+            <div class="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
+
+            <!-- Contenido de la página -->
+            <div class="container py-5 position-relative">
+                $:body
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="../../static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

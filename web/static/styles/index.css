@@ -1,0 +1,7 @@
+.img-carousel {
+    min-height: 560px; /* Ajusta la altura mínima según lo necesites */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsión */
+}
+.carousel-item {
+    height: 100%; /* Para asegurarte de que el carrusel ocupe el 100% del espacio */
+}
